@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { HadleOnChange, HadleOnSubmit } from "./Context";
 
-function Update() {
+function AddPost() {
   const { contact, setContact } = useContext(HadleOnSubmit);
   const { addFormData, setAddFromData } = useContext(HadleOnChange);
 
@@ -54,7 +54,7 @@ function Update() {
     //         will Update
 
     await axios
-      .post(`http://localhost:3000/contacts`, addFormData)
+      .post(`http://localhost:5000/contacts`, addFormData)
       .then(() => {
         // window.location.reload();
 
@@ -120,4 +120,4 @@ function Update() {
   );
 }
 
-export default Update;
+export default AddPost;

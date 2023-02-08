@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Update from "./Components/Update";
+import AddPost from "./Components/AddPost";
 import Crud from "./Crud";
 
 function CrudHeader() {
@@ -8,7 +8,7 @@ function CrudHeader() {
     <div>
       <Routes>
         <Route path="/" element={<Crud />} />
-        <Route path="/update" element={<Update />} />
+        <Route path="/update" element={<AddPost />} />
       </Routes>
     </div>
   );
