@@ -38,7 +38,7 @@ function Crud() {
   useEffect(() => {
     //        will Read
 
-    fetch("http://localhost:5000/contacts")
+    fetch("https://crud-two-theta.vercel.app")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
