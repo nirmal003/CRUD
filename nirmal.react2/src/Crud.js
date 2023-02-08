@@ -38,7 +38,7 @@ function Crud() {
   useEffect(() => {
     //        will Read
 
-    fetch("https://crud-server-pied.vercel.app")
+    fetch("http://localhost:5000/contacts")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
