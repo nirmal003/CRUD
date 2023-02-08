@@ -38,7 +38,7 @@ function Crud() {
   useEffect(() => {
     //        will Read
 
-    fetch("http://localhost:3000/contacts")
+    fetch("http://localhost:5000/contacts")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -97,7 +97,7 @@ function Crud() {
 
     //         will create
 
-    await axios.post(`http://localhost:3000/contacts`, addFormData).then(() => {
+    await axios.post(`http://localhost:5000/contacts`, addFormData).then(() => {
       console.log("Successfully Updated");
     });
 
@@ -145,7 +145,7 @@ function Crud() {
     //           will edit and update
 
     await axios
-      .put(`http://localhost:3000/contacts/${editContactId}`, editedContact)
+      .put(`http://localhost:5000/contacts/${editContactId}`, editedContact)
       .then((res) => {
         // window.location.reload();
 
@@ -173,7 +173,7 @@ function Crud() {
       window.confirm(`Do you want to delete this contact id ${contactId} ?`)
     ) {
       await axios
-        .delete(`http://localhost:3000/contacts/${contactId}`)
+        .delete(`http://localhost:5000/contacts/${contactId}`)
         .then(() => {
           console.log("Successfully deleted");
 
