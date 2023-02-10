@@ -49,8 +49,6 @@ function AddPost() {
 
     setContact(newContacts);
 
-    window.location.href = "/"; //    it will reload always
-
     //         will Update
 
     await axios
@@ -63,6 +61,8 @@ function AddPost() {
       .catch((err) => {
         console.log(err);
       });
+
+    window.location.href = "/"; //    it will reload always
 
     // Navigate("/"); //       it will not reload
   };
