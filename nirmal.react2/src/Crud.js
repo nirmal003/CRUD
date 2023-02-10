@@ -97,9 +97,11 @@ function Crud() {
 
     //         will create
 
-    await axios.post(`http://localhost:5000/contacts`, addFormData).then(() => {
-      console.log("Successfully Updated");
-    });
+    await axios
+      .post(`https://tame-pear-lamb-yoke.cyclic.app/contacts`, addFormData)
+      .then(() => {
+        console.log("Successfully Updated");
+      });
 
     // setOpen(false);
   };
@@ -145,7 +147,10 @@ function Crud() {
     //           will edit and update
 
     await axios
-      .put(`http://localhost:5000/contacts/${editContactId}`, editedContact)
+      .put(
+        `https://tame-pear-lamb-yoke.cyclic.app/contacts/${editContactId}`,
+        editedContact
+      )
       .then((res) => {
         // window.location.reload();
 
@@ -173,7 +178,7 @@ function Crud() {
       window.confirm(`Do you want to delete this contact id ${contactId} ?`)
     ) {
       await axios
-        .delete(`http://localhost:5000/contacts/${contactId}`)
+        .delete(`https://tame-pear-lamb-yoke.cyclic.app/contacts/${contactId}`)
         .then(() => {
           console.log("Successfully deleted");
 

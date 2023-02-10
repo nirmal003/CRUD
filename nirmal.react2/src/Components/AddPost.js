@@ -54,7 +54,7 @@ function AddPost() {
     //         will Update
 
     await axios
-      .post(`http://localhost:5000/contacts`, addFormData)
+      .post(`https://tame-pear-lamb-yoke.cyclic.app/contacts`, addFormData)
       .then(() => {
         // window.location.reload();
 
