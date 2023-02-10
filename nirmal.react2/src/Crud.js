@@ -50,7 +50,7 @@ function Crud() {
       .catch((err) => {
         console.log("Sorry can't fetch the data", err);
       });
-  }, [contact]);
+  }, []);
 
   const handleAddOnChange = (e) => {
     e.preventDefault();
@@ -207,7 +207,7 @@ function Crud() {
         <button className="new-btn" onClick={() => Navigate("/update")}>
           Add New Contact
         </button>
-        <button className="new-btn" onClick={() => setOpen(true)}>
+        <button className="new-btn" disabled onClick={() => setOpen(true)}>
           Portal Add New Contact
         </button>
       </div>
