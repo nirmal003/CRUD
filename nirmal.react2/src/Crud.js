@@ -184,7 +184,7 @@ function Crud() {
 
           newContacts.splice(index, 1);
 
-          window.location.assign(`/contactId`); //    it will reload always
+          window.location.assign(`/`); //    it will reload always
           window.location.href = "/"; //    it will reload always
         })
         .catch(() => {
