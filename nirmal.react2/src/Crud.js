@@ -185,6 +185,8 @@ function Crud() {
           newContacts.splice(index, 1);
 
           window.location.reload();
+
+          window.location.href = "/"; //    it will reload always
         })
         .catch(() => {
           console.log("Sorry! i can't delete this");
