@@ -183,6 +183,8 @@ function Crud() {
           console.log("Successfully deleted");
 
           newContacts.splice(index, 1);
+
+          window.location.reload();
         })
         .catch(() => {
           console.log("Sorry! i can't delete this");
