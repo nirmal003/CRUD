@@ -50,7 +50,7 @@ function Crud() {
       .catch((err) => {
         console.log("Sorry can't fetch the data", err);
       });
-  }, []);
+  }, [contact]);
 
   const handleAddOnChange = (e) => {
     e.preventDefault();
