@@ -38,7 +38,7 @@ function Crud() {
   useEffect(() => {
     //        will Read
 
-    fetch("http://localhost:5000/contacts")
+    fetch("https://tame-pear-lamb-yoke.cyclic.app/contacts")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
