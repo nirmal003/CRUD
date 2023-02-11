@@ -184,15 +184,15 @@ function Crud() {
 
           newContacts.splice(index, 1);
 
-          window.location.assign(`/`); //    it will reload always
+          window.location.href = "/"; //    it will reload always
         })
         .catch(() => {
           console.log("Sorry! i can't delete this");
         });
-    } else {
-      console.log("Couldn't deleted this id");
-    }
-    window.location.href = "/"; //    it will reload always
+      } else {
+        console.log("Couldn't deleted this id");
+      }
+      window.location.assign(`/`); //    it will reload always
 
     setContact(newContacts);
 
