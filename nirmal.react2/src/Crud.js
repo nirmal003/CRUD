@@ -190,7 +190,7 @@ function Crud() {
           console.log("Sorry! i can't delete this");
         });
     } else {
-      console.log("Successfully Canceled");
+      console.log("Couldn't deleted this id");
     }
     window.location.href = "/"; //    it will reload always
 
